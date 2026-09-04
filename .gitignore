@@ -1,0 +1,50 @@
+# ==========================
+# Environment & Secrets
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Dependencies
+# ==========================
+/vendor/
+composer.lock
+
+# ==========================
+# Uploaded / generated content
+# ==========================
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+# ==========================
+# Testing
+# ==========================
+/.phpunit.cache/
+.phpunit.result.cache
+
+# ==========================
+# OS / Editor junk
+# ==========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==========================
+# Local dev tooling
+# ==========================
+/node_modules/
+npm-debug.log
+
+# ==========================
+# Database dumps (never commit real customer data)
+# ==========================
+*.sql.bak
+/database/dumps/
